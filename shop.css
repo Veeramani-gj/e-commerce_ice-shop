@@ -1,0 +1,94 @@
+.search-product-container {
+    min-height: 100vh;
+    width:900px;
+}
+.shop-product-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap:30px;
+}
+.shop-products-details {
+    height:300px;
+    width:300px;
+}
+.products-image img {
+    height: 180px;
+    width: 180px;
+    transition: transform 0.5s;
+}
+.products-image {
+    height: 200px;
+    width: 100%;
+}
+.products-box {
+   row-gap: 30px;
+   column-gap: 20px;
+}
+.shop-products-details  h3 {
+    font-size: 16px;
+}
+.price-div p  {
+    font-size: 16px;
+}
+
+.left-image {
+    width:350px;
+    height:130px;
+    display: flex;
+    /* gap:20px; */
+    padding:10px 0px;
+}
+.left-image  img {
+    height:90px;
+    width:100px;
+   
+}
+.left-image-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap:5px;
+}
+.left-image-details p{
+    color:crimson;
+    cursor: pointer;
+}
+.left-image-details p:hover {
+    color:orange;
+}
+.ourbest-seller {
+    width:350px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    border-bottom: 1px solid gray;
+    padding:20px 0px;
+}
+.star-box i {
+    color:gold;
+}ourbest-seller
+.left-image-details h4 {
+    color:gray;
+}
+.flavourname-box {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    padding:10px 20px;
+}
+.ourbest-seller h2 {
+    border-bottom: 2px solid gray;
+    padding-bottom: 10px;
+    position: relative;
+}
+.ourbest-seller h2::before {
+    content: '';
+    height:2px;
+    width:100px;
+    background-color: red;
+    position: absolute;
+    bottom:-2px;
+    left:0;
+}

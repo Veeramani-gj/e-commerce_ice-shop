@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The IceShop</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="overall-container">
+      <!------nav bar--->
+      <div class="nav">
+         <div class="logo">
+          <img src="./logo-removebg-preview.png" alt="logo" />
+         </div>
+
+        <div class="nav-menu">
+          <ul class="list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./flavour.html">Flavour</a></li>
+            <li><a href="./shop.html">Product</a></li>
+            <li><a href="./purchase.html">Purchase</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="icon-popup">
+          <i class="fa-solid fa-ellipsis dot"></i>
+          <i class="fa-solid fa-bars" id="bar"></i>
+        </div>
+        <div class="cart-icon">
+          <div class="cart">
+            <div class="cart-count">0</div>
+            <i class="fa-solid fa-cart-shopping" id="cart-click"></i>
+          </div>
+          <a href="./booktable.html" class="a-btn">Book A Table</a>
+        </div>
+        <div class="cart-container ">
+            <div class="cart-title">Card Item</div>
+            <div class="cart-content">
+                <!-- <div class="cart-box">
+                    <div class="image-cart">
+                        <img src="./cart-images/ice1-removebg-preview.png"/>
+                    </div>
+                    <div class="product-price">
+                        <p class="product-name">Marionberry CheeseCake</p>
+                        <div class="price-box">
+                            <div class="cart-price">Rs.72</div>
+                            <div class="cart-amt">Rs.72</div>
+                        </div>
+                        <input type="number" value="1"  class="cart-quantity"/>
+                    </div>
+                    <i class="fa-solid fa-trash" id="trash"></i>
+                </div> -->
+            </div>
+                <!-- place Order -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs.0</div>
+                </div>
+            
+                  <a href="#" class="btn-buy a-btn">Place Order</a>
+            
+                  <i class="fa-solid fa-xmark" id="cart-close"></i>
+            
+                </div>
+            
+        </div>
+        
+      <!--------Image Slider-------> 
+      <div class="imageslider-container">
+        <div class="image-slider active">
+            <div class="content content-animation1">
+                   <p class="shop-name">Welcome to Our IceShop</p>
+                <h1>Specializing Strawberry & Chocolate</h1>
+                <p>Dark chocolate is the most bitter of the bunch, which means it matches well to fruit that is extra sweet. Great examples are banana, mango, figs, pears, and, of course, strawberries. That punch of sweetness will balance the bitterness and leave you with a harmonious bite.</p>
+                   <a href="#" class="a-btn">Order Now</a>
+                </div>
+               <div class="image">
+                   <img src="./imageslider-image/slider-1.png" alt="slide1">
+               </div>
+           </div>
+           <div class="image-slider">
+               <div class="content content-animation2">
+                   <p class="shop-name">Welcome to Our IceShop</p>
+                   <h1>Exceptional Ice Cream With Multiple Flavors</h1>
+                   <p>Neapolitan ice cream, also sometimes called Harlequin ice cream, is a type of ice cream composed of three separate flavors (typically vanilla, chocolate, and strawberry) arranged side by side in the same container, usually without any packaging in between.</p>
+                <a href="#" class="a-btn">Order Now</a>
+                </div>
+               <div class="image">
+                   <img src="./imageslider-image/slider-2.png" alt="slide2">
+                </div>
+               </div>
+           <div class="btn-change">
+               <a href="#"><button id="prev-btn"><i class="fa-solid fa-angles-left"></i></button></a>
+               <a href="#"><button id="next-btn"><i class="fa-solid fa-angles-right"></i></button></a>
+           </div>
+       </div>
+    
+      <!------ice-popular-container  -->
+      <div class="pop-container">
+        <div class="pop-box">
+            <div class="pop-content">
+                <h2>Popular Item</h2>
+                <p>35 Items</p>
+                <a href="#" class="a-btn"><i class="fa-solid fa-bag-shopping"></i>Shop Now</a>
+            </div>
+            <div class="pop-image">
+                <img src="./cart-images/cat-1-removebg-preview.png"/>
+            </div>
+        </div>
+        <div class="pop-box">
+            <div class="pop-content">
+                <h2>New Item</h2>
+                <p>25 Items</p>
+                <a href="#" class="a-btn"><i class="fa-solid fa-bag-shopping"></i>Shop Now</a>
+            </div>
+            <div class="pop-image">
+                <img src="./cart-images/cat-2-removebg-preview.png"id="cart-pic"/>
+            </div>
+        </div>
+      </div>
+      <!---------Our Featured Products ------->
+      <div class="products-container">
+        <div class="products-content">
+            <h1>Our Featured Products</h1>
+            <p>A product can be thought of as a standalone offering that provides value to the customer and can be sold and delivered independently. A feature is a specific component or aspect of a product that provides a specific benefit or capability, and is typically part of a larger product offering.</p>
+        </div>
+        <div class="products-box">
+            <div class="products-details">
+                <div class="products-image">
+                    <img src="./cart-images/ice1-removebg-preview.png" id="cart-pic"/>
+                </div>
+                <div class="addcart">
+                    <button><i class="fa-solid fa-cart-shopping"></i>Add Cart</button>
+                </div>
+                <h3 class="price-title">Marionberry CheeseCake</h3>
+                <div class="price-div">
+                    <h3>Price - </h3>
+                    <p class="price-amt">$ 32</p>
+                </div>
+            </div>
+            <div class="products-details">
+                <div class="products-image">
+                    <img src="./cart-images/ice2-removebg-preview.png" id="cart-pic"/>
+                </div>
+                    <div class="addcart">
+                        <button><i class="fa-solid fa-cart-shopping"></i>Add Cart</button>
+                    </div>
+               
+                <h3 class="price-title">Hazelnut Fudge Cookie</h3>
+                <div class="price-div">
+                    <h3>Price - </h3>
+                    <p class="price-amt">$ 35</p>
+                </div>
+            </div>
+            <div class="products-details">
+                <div class="products-image">
+                    <img src="./cart-images/ice3-removebg-preview.png" id="cart-pic"/>
+                   
+                </div>
+                <div class="addcart">
+                    <button><i class="fa-solid fa-cart-shopping"></i>Add Cart</button>
+                </div>
+                <h3 class="price-title">Parline Butter Cake</h3>
+                <div class="price-div">
+                    <h3>Price - </h3>
+                    <p class="price-amt">$ 22</p>
+                </div>
+            </div>
+            <div class="products-details">
+                <div class="products-image">
+                    <img src="./cart-images/ice4-removebg-preview.png"id="cart-pic" />
+                    
+                </div>
+                <div class="addcart">
+                    <button><i class="fa-solid fa-cart-shopping"></i>Add Cart</button>
+                </div>
+                <h3 class="price-title">Chocolate Fudge Brownie</h3>
+                <div class="price-div">
+                    <h3>Price - </h3>
+                    <p class="price-amt">$ 30</p>
+                </div>
+            </div>
+            <div class="products-details">
+                <div class="products-image">
+                    <img src="./cart-images/ice5-removebg-preview.png"id="cart-pic" />
+                  
+                </div>
+                  <div class="addcart">
+                        <button><i class="fa-solid fa-cart-shopping"></i>Add Cart</button>
+                    </div>
+                <h3 class="price-title">Chocolate</h3>
+                <div class="price-div">
+                    <h3>Price - </h3>
+                    <p class="price-amt">$ 25</p>
+                </div>
+            </div>
+            <div class="products-details">
+                <div class="products-image">
+                    <img src="./cart-images/ice6-removebg-preview.png" id="cart-pic"/>
+                   
+                </div>
+                <div class="addcart">
+                    <button><i class="fa-solid fa-cart-shopping"></i>Add Cart</button>
+                </div>
+                <h3 class="price-title">CheeseCake</h3>
+                <div class="price-div">
+                    <h3>Price - </h3>
+                    <p class="price-amt">$ 32</p>
+                </div>
+            </div>
+            <div class="products-details">
+                <div class="products-image">
+                    <img src="./cart-images/ice7-removebg-preview.png" id="cart-pic"/>
+                    
+                </div>
+                <div class="addcart">
+                    <button><i class="fa-solid fa-cart-shopping"></i>Add Cart</button>
+                </div>
+                <h3 class="price-title">Brown Sugar Cookie</h3>
+                <div class="price-div">
+                    <h3>Price - </h3>
+                    <p class="price-amt">$ 15</p>
+                </div>
+            </div>
+            <div class="products-details">
+                <div class="products-image">
+                    <img src="./cart-images/ice8-removebg-preview.png" id="cart-pic"/>
+                   
+                </div>
+                <div class="addcart" >
+                    <button><i class="fa-solid fa-cart-shopping"></i>Add Cart</button>
+                </div>
+                <h3 class="price-title">Bourbon Cherries Jubile</h3>
+                <div class="price-div">
+                    <h3>Price - </h3>
+                    <p class="price-amt">$ 20</p>
+                </div>
+            </div>
+            <div class="products-details">
+                <div class="products-image">
+                    <img src="./cart-images/ice9-removebg-preview.png" id="cart-pic"/>
+                   
+                </div>
+                <div class="addcart">
+                    <button><i class="fa-solid fa-cart-shopping"></i>Add Cart</button>
+                </div>
+                <div class="price-details">
+                <h3 class="price-title">Royal Wedding Cake</h3>
+                <div class="price-div">
+                    <h3>Price - </h3>
+                    <p class="price-amt">$ 15</p>
+                </div>
+                </div>
+                </div>
+                </div>
+             </div>
+             <!-- Our Store's Top Ice Cream Menu -->
+            <div class="icecream-menu">
+                <h1>Our Store's Top <span> Ice Cream Menu</span></h1>
+                <div class="icecream-container">
+                    <div class="icecream-box1">
+                        <div class="icecream-card">
+                            <img src="./image-special/first.jpeg"/>
+                            <div class="icecreamcard-content">
+                                <h2>Peppermint Stick</h2>
+                                <p>“So, when we eat peppermint, we experience a cooling sensation, especially when we breathe.” It's this cooling sensation, Dalton says, and the feelings it triggers that have caused people to crave.</p>
+                            </div>
+                            <div class="ice-amount">
+                                <h1>$ 10</h1>
+                            </div>
+                        </div>
+                        <div class="icecream-card">
+                            <img src="./image-special/second.jpeg"/>
+                            <div class="icecreamcard-content">
+                                <h2>Pumpkin Cheesecake</h2>
+                                <p>Pumpkin cheesecake is typically made using cream cheese, brown sugar, canned pumpkin, and pumpkin pie spice.</p>
+                            </div>
+                            <div class="ice-amount">
+                                <h1>$ 15</h1>
+                            </div>
+                        </div>
+                        <div class="icecream-card">
+                            <img src="./image-special/three.jpg"/>
+                            <div class="icecreamcard-content">
+                                <h2>Kraft Macaroni</h2>
+                                <p>Kraft Mac & Cheese Original Flavor. Cheesy, salty, buttery and, best of all, nostalgic — there is a reason why Kraft's blue box has become the gold standard of store-bought macaroni and cheese.</p>
+                            </div>
+                            <div class="ice-amount">
+                                <h1>$ 20</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icecream-box2">
+                        <div class="icebackground side-1">
+                            
+                        </div>
+                        <div class="icebackground side-2">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="icecream-container icecream-flex">
+                    <div class="icecream-box1">
+                        <div class="icecream-card">
+                            <img src="./image-special/four.jpg"/>
+                            <div class="icecreamcard-content">
+                                <h2>Royal Wedding Cake</h2>
+                                <p>Traditionally, a fruit cake has been the flavor of choice for royal weddings over the years. This hearty cake is made up of a simple batter</p>
+                            </div>
+                            <div class="ice-amount">
+                                <h1>$ 15</h1>
+                            </div>
+                        </div>
+                        <div class="icecream-card">
+                            <img src="./image-special/five.jpg"/>
+                            <div class="icecreamcard-content">
+                                <h2>Bourbon Cherries Jubilee</h2>
+                                <p>A beloved dessert with little known heritage, Auguste Escoffier is credited with the invention of Cherries Jubilee. Based on her love of cherries,</p>
+                            </div>
+                            <div class="ice-amount">
+                                <h1>$ 15</h1>
+                            </div>
+                        </div>
+                        <div class="icecream-card">
+                            <img src="./image-special/six.jpg"/>
+                            <div class="icecreamcard-content">
+                                <h2>Brown Sugar Cookie</h2>
+                                <p>Brown sugar, meanwhile, is dense and compacts easily, creating fewer air pockets during creaming—that means that there's less opportunity to entrap gas</p>
+                            </div>
+                            <div class="ice-amount">
+                                <h1>$ 25</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icecream-box2">
+                        <div class="icebackground side-3">
+                            
+                        </div>
+                        <div class="icebackground side-4">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Our Excellent Team -----> 
+            <div class="team-container">
+                <div class="team-details">
+                    <h1>Our Excellent Team</h1>
+                    <p>The team's exceptional contributions have been instrumental in our success, and I am truly grateful for their expertise, creativity, and teamwork</p>
+                </div>
+                <div class="team-box">
+                    <div class="member-box">
+                        <div class="member-image">
+                            <img src="./member-image/team-1.jpg"/>
+                        </div>
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                        <div class="member-about">
+                            <h2>George Reed</h2>
+                            <p>Team Leader</p>
+                        </div>
+                    </div>
+                    <div class="member-box">
+                        <div class="member-image">
+                            <img src="./member-image/team-2.jpg"/>
+                        </div>
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                        <div class="member-about">
+                            <h2>Mary Baker</h2>
+                            <p>Ice Cream Maker</p>
+                        </div>
+                    </div>
+                    <div class="member-box">
+                        <div class="member-image">
+                            <img src="./member-image/team-3.jpg"/>
+                        </div>
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                        <div class="member-about">
+                            <h2>Larry Tanner</h2>
+                            <p>Main Chef</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ad container -->
+            <div class="add-container">
+                <div class="add">
+                    <img src="./imageslider-image/spl-1.jpg"/>
+                </div>
+                <div class="add">
+                    <img src="./imageslider-image/spl-2.jpg"/>
+                </div>
+            </div>
+
+            <!-------subscribe ----->
+            <div class="subcribe-container">
+                <div class="subscibe-now">
+                    <h1>Subscribe Now</h1>
+                    <p>Subscribe for getting our latest items update regularly</p>
+                </div>
+                <div class="subscribe-form">
+                    <form>
+                    <input type="email" placeholder="Enter Your Email" required/>
+                    <button class="a-btn" type="submit">Subscribe</button>
+                    </form>
+                    
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <div class="logo-image">
+                        <img src="./logo-removebg-preview.png" alt="logo"/>
+                    </div>
+                    <p>Dark chocolate is the most bitter of the bunch, which means it matches well to fruit that is extra sweet. </p>
+                    <div class="footer-icon">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footerbox">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-angles-right"></i>Privacy Policy</a></li>
+                        <li><a href=""><i class="fa-solid fa-angles-right"></i>Terms & Conditions</a></li>
+                        <li><a href=""><i class="fa-solid fa-angles-right"></i>Order Tracking</a></li>
+                        <li><a href=""><i class="fa-solid fa-angles-right"></i>Refunds & Returns</a></li>
+                        <li><a href=""><i class="fa-solid fa-angles-right"></i>Our Services</a></li>
+                        <li><a href=""><i class="fa-solid fa-angles-right"></i>Career Opportunity</a></li>
+                    </ul>
+                </div>
+                <div class="footerbox">
+                    <h2>Opening Hours</h2>
+                    <div class="wrapper">
+                    <div class="shop-time">
+                        <h4>Mon-Tue:</h4>
+                        <h4>6:00AM-10:00PM</h4>
+                    </div>
+                    <div class="shop-time">
+                        <h4>Wed-Thu:</h4>
+                        <h4>6:00AM-10:00PM</h4>
+                    </div>
+                    <div class="shop-time">
+                        <h4>Fri:</h4>
+                        <h4>8:00AM-04:00PM</h4>
+                    </div>
+                    <div class="shop-time">
+                        <h4>Sat:</h4>
+                        <h4>10:00AM-06:00PM</h4>
+                    </div>
+                    <div class="shop-time shop-close">
+                        <h4>Sun:</h4>
+                        <h4>Closed</h4>
+                    </div>
+                    </div>
+                </div>
+                <div class="footerbox">
+                    <h2>Contacts</h2>
+                    <div class="wrapper info-box">
+                         <div class="information">
+                             <div class="icon-content">
+                             <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="info">
+                                <h3>Phone : </h3>
+                                <p>+12 345 678 999</p>
+                            </div>
+                        </div>
+                         <div class="information">
+                             <div class="icon-content">
+                            <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="info">
+                                <h3>Email : </h3>
+                                <p>hello@example.com</p>
+                                <p>test@example.com</p>
+                            </div>
+                        </div>
+                         <div class="information">
+                             <div class="icon-content">
+                             <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="info">
+                                <h3>Address : </h3>
+                                <p>123 Western Road Melbourne, United Kingdom</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+    <script src="./index.js"></script>
+</body>
+</html>
