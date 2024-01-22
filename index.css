@@ -1408,7 +1408,7 @@ display: none!important;
         left: 0;
         align-items: start;
         padding-left: 50px;
-        gap: 30px;
+        gap: 50px;
         background-color: gray;
         font-size: 20px;
         transition: 0.5s;
@@ -1701,7 +1701,7 @@ display: none!important;
         width:300px;
     }
     .booktable-container {
-        padding:130px 0px;
+        padding:87px 0px;
     }
     .booktable-box {
        height: unset;
@@ -1728,6 +1728,7 @@ display: none!important;
     }
     .contact-form form .contact-name input {
         width: 300px;
+        appearance: none;
     }
     .contact-form p {
         width: 100%;
